@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --primary: #E32219;
+  /* Nescafe Red */
+  --primary-dark: #cc1e15;
+  --bg-color: #ffffff;
+  --bg-alt: #f4f4f4;
+  --text-main: #2b2b2b;
+  --text-muted: #666666;
+  --radius-pill: 50px;
+  --radius-md: 8px;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111111;
+  font-family: 'Fredoka', cursive;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: var(--transition);
+}
+
+/* Unified Global Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  background-color: #ef4444;
+  /* Bright, appetizing red */
+  color: #ffffff !important;
+  border-radius: 12px;
+  /* Smooth rounded corners */
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 20px -5px rgba(239, 68, 68, 0.5);
+  /* Soft, colored blur */
+  font-family: 'Nunito', 'Fredoka', sans-serif;
+  /* Rounded, friendly font */
+}
+
+.btn-primary:hover {
+  background-color: #dc2626;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px -5px rgba(239, 68, 68, 0.6);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-primary:active {
+  transform: translateY(0px);
+  box-shadow: 0 5px 10px -5px rgba(239, 68, 68, 0.5);
+}
+
+.btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  background-color: transparent;
+  color: var(--primary);
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 2px solid var(--primary);
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}

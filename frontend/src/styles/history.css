@@ -1,0 +1,183 @@
+/* history.css */
+.history-container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.history-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.back-link {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #6b7280;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #1f2937;
+}
+
+.history-header h1 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.history-header p {
+    color: #6b7280;
+}
+
+.orders-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.history-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f3f4f6;
+    transition: transform 0.2s;
+}
+
+.history-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.history-card.completed {
+    opacity: 0.8;
+}
+
+.history-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+}
+
+.order-basics h3 {
+    margin: 0 0 4px 0;
+    color: #1f2937;
+    font-size: 18px;
+}
+
+.order-time {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+.order-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ef4444;
+}
+
+.status-tracker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+}
+
+.status-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+}
+
+.status-step.active {
+    opacity: 1;
+}
+
+.step-icon {
+    font-size: 32px;
+}
+
+.status-step span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.status-step.active span {
+    color: #111827;
+}
+
+.status-line {
+    flex: 1;
+    height: 4px;
+    background: #e5e7eb;
+    margin: 0 16px;
+    border-radius: 2px;
+}
+
+.status-step.active+.status-line {
+    background: #10b981;
+}
+
+.history-details {
+    padding-top: 16px;
+    border-top: 1px solid #f3f4f6;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.payment-success {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.payment-pending {
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+.payment-failed {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.no-orders {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.sad-pizza {
+    font-size: 64px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.no-orders p {
+    color: #6b7280;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn.small {
+    padding: 12px 24px;
+    font-size: 16px;
+}

@@ -1,0 +1,115 @@
+/* checkout.css */
+.checkout-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: calc(100vh - 80px);
+    /* Approx minus nav */
+    background: #fdfdfd;
+}
+
+.checkout-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+}
+
+.order-review h2,
+.payment-section h2 {
+    margin-top: 0;
+    color: #1f2937;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.review-card,
+.payment-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f3f4f6;
+}
+
+.review-section h3 {
+    margin-top: 0;
+    color: #4b5563;
+    font-size: 18px;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 12px;
+}
+
+.review-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.review-list li {
+    padding: 12px 0;
+    border-bottom: 1px dashed #e5e7eb;
+    color: #374151;
+    font-size: 15px;
+}
+
+.review-list li:last-child {
+    border-bottom: none;
+}
+
+.review-list strong {
+    color: #1f2937;
+    margin-right: 8px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-top: 10px;
+    border-top: 2px solid #f3f4f6;
+    font-size: 20px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.pay-btn {
+    width: 100%;
+    background: #10b981;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    margin-top: 20px;
+}
+
+.pay-btn:hover:not(:disabled) {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+}
+
+.pay-btn:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.payment-note {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 12px;
+    margin-top: 16px;
+}
