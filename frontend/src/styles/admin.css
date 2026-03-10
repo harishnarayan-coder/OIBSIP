@@ -283,3 +283,44 @@
     color: #10b981;
     border-color: #6ee7b7;
 }
+
+/* Mobile Responsiveness for Admin */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 15px;
+    }
+
+    .admin-header h1 {
+        font-size: 26px;
+    }
+
+    .admin-form {
+        grid-template-columns: 1fr;
+    }
+
+    .inventory-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .item-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .order-status-update {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .status-select {
+        width: 100%;
+    }
+}

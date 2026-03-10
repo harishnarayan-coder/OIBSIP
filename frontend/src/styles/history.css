@@ -181,3 +181,32 @@
     padding: 12px 24px;
     font-size: 16px;
 }
+
+/* Mobile Responsiveness for Order History */
+@media (max-width: 768px) {
+    .history-container {
+        padding: 20px 15px;
+    }
+
+    .history-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .status-tracker {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .status-line {
+        display: none;
+        /* Hide horizontal lines on mobile step tracker */
+    }
+
+    .status-step {
+        flex-direction: row;
+        width: 100%;
+    }
+}

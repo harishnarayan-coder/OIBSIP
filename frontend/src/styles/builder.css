@@ -309,3 +309,79 @@
     font-weight: bold;
     color: #ef4444;
 }
+
+/* Mobile Responsiveness for Builder */
+@media (max-width: 1024px) {
+    .builder-content-split {
+        flex-direction: column;
+    }
+
+    .split-left-3d {
+        min-height: 400px;
+        flex: none;
+        width: 100%;
+    }
+
+    .split-right-ui {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .builder-container {
+        padding: 15px;
+    }
+
+    .builder-header h1 {
+        font-size: 28px;
+    }
+
+    /* Stack the progress steps vertically or compress them */
+    .progress-bar {
+        gap: 5px;
+    }
+
+    .step-name {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .builder-content {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-panel {
+        position: relative;
+        top: 0;
+        margin-top: 20px;
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .split-left-3d {
+        min-height: 350px;
+    }
+
+    .ingredients-panel {
+        padding: 15px;
+    }
+
+    .navigation-buttons {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -113,3 +113,15 @@
     font-size: 12px;
     margin-top: 16px;
 }
+
+/* Mobile Responsiveness for Checkout */
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 20px 15px;
+    }
+
+    .checkout-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
